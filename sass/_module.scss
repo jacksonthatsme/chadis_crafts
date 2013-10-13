@@ -1,0 +1,50 @@
+header{
+  .flag{
+   margin-right: 17px; 
+  }
+  ul{
+    li{
+      margin-left: 20px;
+    }
+  }
+}
+.btn{
+  padding: 1px 0px 6px;
+  background-color: $background-color;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  @include box-sizing(border-box);
+  &:hover{
+    @include hover-border;
+  }
+}
+footer{
+  p{
+    color: #B4B4C0;
+  }
+}
+form{
+  margin-top: 20px;
+  .one-third{
+    width: 30%;
+  }
+}
+input{
+  border: none;
+  outline: none;
+  background-color: $background-color;
+  display: block;
+  height: 40px;
+  font-size: 1.2em;
+  color: $text-color;
+  font-family: $crimson;
+  @include box-sizing(border-box);
+  padding: 0px 10px;
+  &:focus{
+    @include hover-border;
+  }
+}
+label{
+  padding-bottom: 15px;
+}

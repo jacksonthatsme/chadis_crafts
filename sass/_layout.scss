@@ -1,0 +1,41 @@
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+header{
+  @include border(bottom);
+  color: $main-color;
+  padding: 27px 0px 30px;
+  & *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul{
+    float: right;
+  }
+  .branding{
+    float: left;
+  }
+}
+.three-up{
+  margin-top: 70px;
+  @include border(bottom);
+  padding-bottom: 83px;
+  div{
+    display: inline-block;
+    vertical-align: text-top;
+    &:not(:first-child){
+      margin-left: 20px;
+    }
+    &.one-third{
+      width: 31%;
+      
+    }
+  }
+}
+footer{
+  @include border(top); 
+}
+.contact{
+  margin-top: 30px;
+}
