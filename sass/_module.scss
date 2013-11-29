@@ -26,25 +26,53 @@ footer{
 }
 form{
   margin-top: 20px;
+  margin-bottom: 60px;
   .one-third{
-    width: 30%;
+    width: 32.3%;
+    display: inline-block;
+    &:not(:first-of-type){
+      padding-left: 1%;
+    }
+  }
+  label{
+    padding-bottom: 10px;
   }
 }
-input{
+input, textarea{
   border: none;
   outline: none;
   background-color: $background-color;
   display: block;
   height: 40px;
+  width: 100%;
   font-size: 1.2em;
   color: $text-color;
   font-family: $crimson;
   @include box-sizing(border-box);
-  padding: 0px 10px;
+  padding: 10px 10px;
+  p{
+    padding-bottom: 10px;
+  }
   &:focus{
     @include hover-border;
   }
+  &[type="submit"]{
+    margin-top: 30px;
+    cursor: pointer;
+    width: intrinsic;
+    padding: 0px 20px;
+    color: $text-color;
+    &:hover{
+      @include hover-border;
+    }
+  }
+  &#message{
+    height: 200px;
+  }
 }
-label{
-  padding-bottom: 15px;
+footer{
+  p{
+    font-size: 13px;
+  }
+  padding-bottom: 20px;
 }

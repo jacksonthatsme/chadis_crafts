@@ -44,12 +44,12 @@ $crimson: 'Crimson Text', serif;
   -o-box-sizing: $input;
 }
 @mixin hover-border{
-  border-right: 2px solid #E2E2F2;
-  border-bottom: 2px solid #E2E2F2;
-  border-top: 2px solid #F5F5FF;
-  border-left: 2px solid #F5F5FF;
+  background-color: tint($background-color, 30%);
+  outline: solid 1px shade($background-color, 10%);
 }
-
+@mixin border-radius{
+  border-radius: 3px;
+}
 /*BASE*/
 body{
   font-size: 16px;
